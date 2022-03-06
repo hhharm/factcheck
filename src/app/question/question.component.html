@@ -1,0 +1,71 @@
+<label id="question">{{ question }}</label>
+<ng-container>
+  <mat-radio-group
+    aria-labelledby="choice-group"
+    class="choice-group"
+    [(ngModel)]="choice"
+  >
+    <div class="option">
+      <mat-icon
+        *ngIf="correctAnswer === 1 && choice !== undefined"
+        class="true"
+      >
+        verified
+      </mat-icon>
+      <mat-icon
+        *ngIf="
+          choice !== undefined &&
+          correctAnswer !== 1 &&
+          correctAnswer !== +(choice ?? -1)
+        "
+        class="false"
+      >
+        highlight_off
+      </mat-icon>
+      <mat-radio-button
+        class="choice-button"
+        [value]="1"
+        [disabled]="choice !== undefined"
+      >
+        Правда
+      </mat-radio-button>
+    </div>
+    <div class="option">
+      <mat-icon
+        *ngIf="correctAnswer === 0 && choice !== undefined"
+        class="true"
+      >
+        verified
+      </mat-icon>
+      <mat-icon
+        *ngIf="
+          choice !== undefined &&
+          correctAnswer !== 0 &&
+          correctAnswer !== +(choice ?? -1)
+        "
+        class="false"
+      >
+        highlight_off
+      </mat-icon>
+      <mat-radio-button
+        class="choice-button"
+        [value]="0"
+        [disabled]="choice !== undefined"
+      >
+        Ложь
+      </mat-radio-button>
+    </div>
+  </mat-radio-group>
+</ng-container>
+<ng-container *ngIf="choice !== undefined">
+  <p class="answer" [innerHtml]="answer"></p>
+  <button
+    id="basic"
+    type="button"
+    mat-button
+    color="accent"
+    (click)="onNextClick()"
+  >
+    Дальше
+  </button>
+</ng-container>

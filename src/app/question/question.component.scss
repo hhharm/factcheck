@@ -1,0 +1,35 @@
+:host {
+  width: 100%;
+}
+
+.choice-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  align-items: flex-start;
+}
+
+.option {
+  position: relative;
+}
+.choice-button {
+  margin: 5px;
+}
+
+.false {
+  position: absolute;
+  left: 3px;
+  top: 4px;
+  color: white;
+  background: red;
+  z-index: 100;
+}
+
+.true {
+  position: absolute;
+  left: 3px;
+  top: 4px;
+  color: white;
+  background: green;
+  z-index: 100;
+}
