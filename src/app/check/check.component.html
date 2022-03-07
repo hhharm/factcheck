@@ -1,0 +1,41 @@
+<section *ngIf="!started; else start" class="intro">
+  <p>
+    Привет! Я сделала эту страницу, чтобы люди могли понять, насколько хорошо
+    они умеют проверять информацию.
+  </p>
+  <p>Далее будет несколько новостей, нужно понять фейк это или правда.</p>
+  <p>
+    Подразумевается, что вы будете работать с источниками (искать подтверждение
+    или опровержение, используя поисковую систему, анализировать и делать
+    выводы), а не пытаться угадать.
+  </p>
+  <p>Готовы?</p>
+  <button
+    (click)="started = true"
+    type="button"
+    color="accent"
+    mat-raised-button
+  >
+    Начать!
+  </button>
+</section>
+<ng-template #start>
+  <app-question
+    *ngIf="index < totalQuestions; else end"
+    [answer]="qna.answer"
+    [question]="qna.question"
+    [correctAnswer]="qna.correctAnswer"
+    (next)="onNextClick($event)"
+  ></app-question>
+</ng-template>
+<ng-template #end>
+  <div class="result">
+    Вопросы закончились, у вас получилось отделить фейк от правды в
+    <b>{{ score }} из {{ totalQuestions }}</b> новостей.
+    <br />
+    <br />
+    <a [routerLink]="['/useful']" mat-raised-button color="accent">
+      Прочитайте как распознавать фейки
+    </a>
+  </div>
+</ng-template>

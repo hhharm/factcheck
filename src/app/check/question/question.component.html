@@ -62,9 +62,8 @@
   <button
     id="basic"
     type="button"
-    mat-button
-    color="accent"
-    (click)="onNextClick()"
+    mat-raised-button
+    (click)="onNextClick(correctAnswer === +choice)"
   >
     Дальше
   </button>

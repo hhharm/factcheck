@@ -1,0 +1,21 @@
+.intro {
+  text-align: center;
+  padding: 24px;
+}
+
+.result {
+  padding: 56px 24px;
+  margin: 24px;
+  border: 1px solid pink;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .intro {
+    padding: 24px 6px;
+  }
+  .result {
+    margin: 24px 6px;
+    padding: 56px 6px;
+  }
+}

@@ -37,7 +37,7 @@ export class QuestionComponent implements OnInit, OnChanges {
 
   ngOnInit(): void {}
 
-  onNextClick() {
-    this.next.emit();
+  onNextClick(correct: boolean) {
+    this.next.emit(correct);
   }
 }
