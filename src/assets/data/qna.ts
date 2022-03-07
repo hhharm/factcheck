@@ -34,7 +34,7 @@ export const qnas: QnA[] = [
       'Аэропорт Орли в Париже назван так в честь украинского гетмана Филиппа Орлика.',
     answer:
       'Аэропорт назван именем <a href="https://en.wikipedia.org/wiki/Orly" target="_blank">коммуны Орли, где он расположен</a>.\
- Коммуна названа в честь римского рода <a href="https://ru.wikipedia.org/wiki/%D0%90%D0%B2%D1%80%D0%B5%D0%BB%D0%B8%D0%B8" target="_blank">Аврелиев, имевших там виллу .',
+ Коммуна названа в честь римского рода <a href="https://ru.wikipedia.org/wiki/%D0%90%D0%B2%D1%80%D0%B5%D0%BB%D0%B8%D0%B8" target="_blank">Аврелиев, имевших там виллу.',
     correctAnswer: 0,
   },
 ];

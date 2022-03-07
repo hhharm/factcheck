@@ -29,3 +29,16 @@ main {
   margin: 24px;
   border: 1px solid pink;
 }
+
+@media (max-width: 1000px) {
+  main {
+    padding: 50px 3px;
+  }
+  .intro {
+    padding: 24px 6px;
+  }
+  .result {
+    margin: 24px 6px;
+    padding: 56px 6px;
+  }
+}
