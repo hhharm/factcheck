@@ -4,10 +4,10 @@ import { ArticlesComponent } from './articles/articles.component';
 import { VideoComponent } from './video/video.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/articles', pathMatch: 'full' },
+  { path: '', redirectTo: '/video', pathMatch: 'full' },
   { path: 'articles', component: ArticlesComponent },
   { path: 'video', component: VideoComponent },
-  { path: '**', component: ArticlesComponent },
+  { path: '**', component: VideoComponent },
 ];
 
 @NgModule({
