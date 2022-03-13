@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:app-shell": "ng run fake-check:app-shell",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

@@ -1,0 +1,18 @@
+mat-card {
+  margin: 10px 0;
+  min-width: min(350px, 100vw);
+  flex: 1 1 30%;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 10px;
+  background-color: #eeeeee;
+}
+
+.links {
+  text-align: center;
+}

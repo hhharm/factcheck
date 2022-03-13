@@ -17,7 +17,6 @@ import { MaterialModule } from './material/material.module';
     FormsModule,
     MaterialModule,
   ],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

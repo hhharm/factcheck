@@ -1,6 +1,9 @@
 .intro {
   text-align: center;
   padding: 24px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 .result {
@@ -8,6 +11,9 @@
   margin: 24px;
   border: 1px solid pink;
   text-align: center;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 @media (max-width: 1000px) {
